@@ -33,6 +33,7 @@ public class gestionarDiaSemanasTest {
 
     @Test
     public void testEliminarDiaSemana() {
-    
+    gestionarDiaSemana.eliminarDia("Lunes");
+    assertFalse(gestionarDiaSemana.getDiasDeLaSemana().contains("Lunes"));
     }
 }
